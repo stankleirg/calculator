@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="calculator">
+    <div id="display" class="display">0</div>
+    <div class="buttons">
+      <button data-key="/" onclick="appendOperator('/')">/</button>
+      <button data-key="%" onclick="appendOperator('%')">%</button>
+      <button data-key="C" onclick="clearDisplay()">C</button>
+      <button data-key="DEL" onclick="deleteLast()">DEL</button>
+      <button data-key="1" onclick="appendNumber('1')">1</button>
+      <button data-key="2" onclick="appendNumber('2')">2</button>
+      <button data-key="3" onclick="appendNumber('3')">3</button>
+      <button data-key="+" onclick="appendOperator('+')">+</button>
+      <button data-key="4" onclick="appendNumber('4')">4</button>
+      <button data-key="5" onclick="appendNumber('5')">5</button>
+      <button data-key="6" onclick="appendNumber('6')">6</button>
+      <button data-key="-" onclick="appendOperator('-')">−</button>
+      <button data-key="7" onclick="appendNumber('7')">7</button>
+      <button data-key="8" onclick="appendNumber('8')">8</button>
+      <button data-key="9" onclick="appendNumber('9')">9</button>
+      <button data-key="*" onclick="appendOperator('*')">×</button>
+      <button data-key="0" class="zero" onclick="appendNumber('0')">0</button>
+      <button data-key="." onclick="appendNumber('.')">.</button>
+      <button data-key="=" class="equal" onclick="calculate()">=</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
